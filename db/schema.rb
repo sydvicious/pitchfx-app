@@ -32,17 +32,17 @@ ActiveRecord::Schema.define(version: 20141214215136) do
     t.integer  "away_team_runs"
     t.integer  "inning"
     t.integer  "top_of_inning"
-    t.string   "game_atbat_number"
+    t.integer  "game_atbat_number"
     t.integer  "pitch_per_atbat"
     t.integer  "pitch_per_game"
     t.string   "pitcher_first_name",          limit: 30
     t.string   "pitcher_last_name",           limit: 30
-    t.integer  "pitcher_id"
+    t.string   "pitcher_id",                  limit: 30
     t.string   "pitcher_mlb_id",              limit: 30
     t.string   "pitcher_throws",              limit: 1
     t.string   "batter_first_name",           limit: 30
     t.string   "batter_last_name",            limit: 30
-    t.integer  "batter_id"
+    t.string   "batter_id",                   limit: 30
     t.string   "batter_mlb_id",               limit: 30
     t.string   "batter_stance",               limit: 1
     t.float    "strike_zone_top",             limit: 24
