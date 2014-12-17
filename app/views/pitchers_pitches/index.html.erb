@@ -1,0 +1,8 @@
+<h1>Pitcher's Pitch Counts</h1>
+
+<table border="1" style=""width:100%>
+  <tr><td>Pitcher ID</td><td>Pitches</td></tr>
+  <% @pitchers.each do |p| %>
+    <tr><td> <%= p.attributes['pitcher_id'] %> </td> <td> <%= p.attributes['count'] %> </td></tr>
+  <% end %>
+</table>
